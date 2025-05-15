@@ -1,0 +1,14 @@
+type DailyTrip {
+  date: String!
+  tripDistance: Float!
+  fareAmount: Float!
+  passengerCount: Int!
+}
+
+type Query {
+  getDailyTrips: [DailyTrip!]!
+}
+
+type Mutation {
+  processTaxiData(filePath: String!): String!
+}

@@ -1,0 +1,12 @@
+query {
+    getDailyTrips {
+      date
+      tripDistance
+      fareAmount
+      passengerCount
+    }
+  }
+
+mutation {
+    processTaxiData(filePath: "data/yellow-tripdata-2025-01.csv")
+  }
